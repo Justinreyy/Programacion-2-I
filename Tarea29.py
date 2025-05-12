@@ -1,5 +1,6 @@
 #Sumar números ingresados por el usuario hasta que ingrese 0.
 
+
 #Adivinar un número aleatorio entre 1 y 100 (pistas: "mayor" o "menor").
 
 #Validar contraseña (repetir hasta que coincida con una guardada).
@@ -17,3 +18,11 @@
 #Simular un temporizador (contar regresivamente desde N).
 
 #Leer archivos línea por línea hasta fin de archivo.
+
+#mientras - while
+#visualizar los 5 primeros numeros con mientras = while
+
+contador= 0
+while contador <=10:
+     print("numero: ", contador)
+     contador += 1
