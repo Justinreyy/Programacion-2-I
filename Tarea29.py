@@ -30,27 +30,71 @@ while True:
         break
 
 
+# Raíz cuadrada por el método babilónico
 
-#Validar contraseña (repetir hasta que coincida con una guardada).
+n = 20
+tol = 1e-4
+error_cuadrado = tol ** 2
+estimacion = n / 2
 
-#Simular un cajero automático (menú: retirar, depositar, salir).
+while True:
+    nueva_estimacion = 0.5 * (estimacion + n / estimacion)
+    if (nueva_estimacion - estimacion) ** 2 < error_cuadrado:
+        break
+    estimacion = nueva_estimacion
 
-#Calcular la raíz cuadrada por aproximación (método babilónico).
+print(f"Raíz cuadrada aproximada de {n}: {nueva_estimacion:.5f}")
 
-#Contar dígitos de un número entero (ej: 456 → 3).
+# Contar cifras de un número entero
 
-#Generar la secuencia de Fibonacci hasta un límite.
+numero = 2358
+contador = 0
+valor = abs(numero)  # Para considerar también números negativos
 
-#Encontrar números primos en un rango dado.
+while valor:
+    valor //= 10
+    contador += 1
 
-#Simular un temporizador (contar regresivamente desde N).
+print(f"{numero} tiene {contador} cifras.")
+
+# Sucesión de Fibonacci hasta un límite
+
+limite = int(input("Límite superior para Fibonacci: "))
+a, b = 0, 1
+fibo = []
+
+while a <= limite:
+    fibo.append(a)
+    a, b = b, a + b
+
+print(f"Fibonacci hasta {limite}: {fibo}")
+
+# Números primos en un intervalo
+
+inicio, fin = 10, 50
+
+for num in range(inicio, fin + 1):
+    if num > 1:
+        for divisor in range(2, int(num ** 0.5) + 1):
+            if num % divisor == 0:
+                break
+        else:
+            print(f"Primo: {num}")
+
+# Cuenta regresiva
+
+inicio_cuenta = int(input("Inicio de la cuenta regresiva: "))
+
+for t in range(inicio_cuenta, 0, -1):
+    print(f"Tiempo restante: {t} segundos")
+
+print("¡Cuenta regresiva completada!")
 
 #Leer archivos línea por línea hasta fin de archivo.
-
-#mientras - while
-#visualizar los 5 primeros numeros con mientras = while
-
-contador= 0
-while contador <=10:
-     print("numero: ", contador)
-     contador += 1
+f = open("archivo.txt", "r")
+linea = f.readline()
+while linea != "":
+    print(linea, end="")
+    linea = f.readline()
+f.close()
+print("fin del programa")
