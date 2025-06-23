@@ -1,0 +1,7 @@
+
+Descripción de un proyecto académico de ingeniería eléctrica:
+
+Este proyecto tiene como objetivo el diseño e implementación de un sistema de monitoreo eléctrico utilizando sensores y microcontroladores.
+ A través de la recopilación de datos en tiempo real, se busca optimizar el consumo energético en instalaciones residenciales o comerciales.
+ La propuesta integra conocimientos de electrónica, programación y análisis de datos, aportando una solución práctica y eficiente a los desafíos del uso racional de la energía.
+
