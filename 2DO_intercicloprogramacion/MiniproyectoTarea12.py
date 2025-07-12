@@ -46,7 +46,7 @@ while True:
                     print(f"Resultado: {resultado}")
                 elif opcion == "2":
                     resultado = num1 - num2
-                    print(f"Resultado: {resultado}")
+                    print(f"Resultado: {resultado}")  
                 elif opcion == "3":
                     resultado = num1 * num2
                     print(f"Resultado: {resultado}")
@@ -59,7 +59,7 @@ while True:
     elif opcion == "2":
         valor = float(input("Ingrese el valor de la temperatura: "))
         temp = input("Ingrese: C para cambiar de C a F, F para cambiar de F a C: ").upper()
-        print("El valor convertido es: ", convertir(valor, temp))
+        print("El valor convertido es: ", canvertir(valor, temp))
     elif opcion == "3":
         promedio = calcular_promedio()
         if promedio < 5:
